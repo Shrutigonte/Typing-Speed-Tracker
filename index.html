@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Typing Speed Tracker</h1>
+            <button id="dark-mode-toggle">Toggle Dark Mode</button>
+        </header>
+        <div class="settings">
+            <label for="time-select">Test Duration:</label>
+            <select id="time-select">
+                <option value="60">1 Minute</option>
+                <option value="180">3 Minutes</option>
+                <option value="300">5 Minutes</option>
+            </select>
+            <button id="start-test">Start Test</button>
+        </div>
+        <div class="typing-test" id="typing-test">
+            <p id="text-display">The quick brown fox jumps over the lazy dog.</p>
+            <textarea id="text-input" placeholder="Start typing here..." disabled></textarea>
+            <div class="stats">
+                <p>Time Left: <span id="time-left">60</span> seconds</p>
+                <p>WPM: <span id="wpm">0</span></p>
+                <p>Accuracy: <span id="accuracy">100</span>%</p>
+            </div>
+        </div>
+        <div class="results" id="results">
+            <h2>Test Results</h2>
+            <p>WPM: <span id="final-wpm">0</span></p>
+            <p>Accuracy: <span id="final-accuracy">0</span>%</p>
+            <button id="restart-test">Restart</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
